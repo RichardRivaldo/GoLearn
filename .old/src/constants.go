@@ -1,0 +1,3 @@
+package main
+
+const API_KEY_CONSTANT = "AAAAAAAAAAAAAAAAAAAAAAA"
