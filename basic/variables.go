@@ -50,4 +50,10 @@ package basic
 // Typed vs Untyped Constants
 // Can specify or not the type of a constant during declaration
 // Untyped constant is typeless, so that it can be used to multiply float and int
-// Will be type-infered if used in a code that needs type based on the value
+// Will be typed based on the first expression it is used
+
+// IOTA
+// Successive integers constant values from 0
+// Automatically increment the value upon initialization
+// const (c1 = iota, c2, c3) = (0, 1, 2)
+// The sequence can be skipped with _ and can be modified with arithmetic operations
