@@ -1,4 +1,4 @@
-package variables
+package basic
 
 // Go Variables
 // Type inference in Go, so we don't need to specify type in declaration
@@ -36,3 +36,18 @@ package variables
 // Multiple Assignment
 // Tuple-like assignment, can swap two variables' values like Python
 // var1, var2 = val1, val2 => var1, var2 = val2, val1
+
+// Constants
+// Unnamed constants = literals
+// Can be checked during compilation and must be initialized during compilation
+// Can't be initialized based on a function / variable value because it is runtime value
+// But can be initialized with built-in function like len
+
+// Can be unused, declared like variables
+// const varName type = value
+// Exception: const (c1 = 500, c2, c3) => c2 and c3 will also be 500
+
+// Typed vs Untyped Constants
+// Can specify or not the type of a constant during declaration
+// Untyped constant is typeless, so that it can be used to multiply float and int
+// Will be type-infered if used in a code that needs type based on the value

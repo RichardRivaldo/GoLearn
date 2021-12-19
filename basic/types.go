@@ -1,4 +1,4 @@
-package variables
+package basic
 
 // Types in Go
 // Statically and strongly typed language
