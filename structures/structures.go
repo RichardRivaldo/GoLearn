@@ -1,6 +1,6 @@
 // Always define packages for each Go files
 // Main package is predefined to generate executable standalone Go program
-package main
+package structures
 
 // Import Package
 // fmt (r: "fumt") is Go Standard Library
