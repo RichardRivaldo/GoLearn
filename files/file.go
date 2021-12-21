@@ -16,7 +16,7 @@ package files
 // Open
 // os.Open("file") => Read Mode
 // os.OpenFile("file", MODE | os.O_APPEND, PERMISSION)
-// PERMISSION = 0644
+// PERMISSION = 0644 => open or create a file, if exists then clear the file
 
 // File Info
 // var fileInfo os.FileInfo
@@ -31,11 +31,11 @@ package files
 
 // Writing Bytes
 // file.Write("file", bytesSlice)
-// ioutil.WriteFile("file", bytesSlice, PERMISSIOn) => Handle create, open, write, and close
+// ioutil.WriteFile("file", bytesSlice, PERMISSION) => Handle create, open, write, and close
 
 // Writing with Buffers - bufio
 // writer = bufio.NewWriter(file)
-// Available Buffer Size => writer.Available() => default 4MB = 4096 bytes
+// Available Buffer Size => writer.Available() => default 4KB = 4096 bytes
 // written, err := writer.Write(bytesSlice) or writer.WriteString(string)
 // Unflushed Buffer Size => writer.Buffered()
 // Flush / apply the buffer content to the file => writer.Flush()
@@ -46,7 +46,7 @@ package files
 // io.readFull(file, targetSlice) => bytesRead, err
 
 // Entire content
-// ioutil.ReadAll(file) => str, err
+// ioutil.ReadAll(file) => byteSlice, err
 // ioutil.ReadFile("file") => byteSlice, err => handles opening and closing
 
 // Reading delimited file content
