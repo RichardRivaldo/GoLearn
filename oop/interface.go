@@ -27,3 +27,13 @@ package oop
 // switch val := interfaceObject.(type) {case typeImplementTheInterface}
 
 // Interface Embedding
+// type i interface {interface1, interface2, otherMethods()}
+// Circular embedding is not allowed!
+
+// Empty Interface
+// Interface with no method, all type implements the interface and is valid for that interface
+// Will still need type assertion
+// Useful for unknown arguments type or all types are supposed to be allowed
+// Hard to maintain as usual :D
+// interface{} => empty interface type
+// type i interface{} => named empty interface
